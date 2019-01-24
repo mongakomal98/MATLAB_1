@@ -1,0 +1,14 @@
+clc;close all;clear all;
+F=8;M=2;K=16;B=4;
+x0=4;
+sim('ex_1',30);
+plot(t,x);
+hold on;
+B=12;
+sim('ex_1',30);
+plot(t,x,'r');
+grid on;
+xlabel('time');
+ylabel('samples');
+title('MASS SPRING EXAMPLE');
+legend('B=4','B=12');
